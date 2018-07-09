@@ -7,18 +7,19 @@ public class MyCollection implements DynamicArray {
 	 */
 	@SuppressWarnings("unused")
 	private String[] numArray;
+	int count=0;
 	
 	public MyCollection(int arraySize){
 		numArray = new String[arraySize];
 		
 	}
+	int i=0;
 	public int search(String searchingNum) {
-		int size=numArray.length;
 		int flag=0;
-		int i=0,pos=-1;
-		for(i=0;i<size;i++) {
+		int pos=-1;
+		for(i=0;i<numArray.length;i++) {
 			System.out.println(numArray[i]);
-			if(searchingNum.equals(numArray[i])) {
+			if(searchingNum == (numArray[i])) {
 				System.out.println("element found at position"+i);
 				pos=i;
 				flag=1;
@@ -36,9 +37,11 @@ public class MyCollection implements DynamicArray {
 	public boolean add(String numberToAdd) {
 		int size=numArray.length;
 		int status=0;
-		for(int i=0;i<size;i++) {
+		
+			count++;
 			if(i==0) {
 			numArray[i]=numberToAdd;
+			i++;
 			}
 			else {
 				for(int j=0;j<size;j++) {
@@ -47,15 +50,14 @@ public class MyCollection implements DynamicArray {
 					}
 				}
 				numArray[i]=numberToAdd;
+				i++;
 			}
 			
-		}
-
+		
 		if(numArray.length>0 || status==1)
 			return true;
 		else
 			return false;
-		
 	}
 
 	public void doubleCapacity() {
@@ -68,13 +70,12 @@ public class MyCollection implements DynamicArray {
 	}
 
 	public boolean remove(String numberToRemove) {
-		int size=numArray.length;
+		
 		int flag=0;
-		for(int i=0;i<size;i++) {
-			System.out.println(numArray);
-			if(numberToRemove.equals(numArray[i])) {
-				for(int j=i;j<size;j++) {
-					numArray[i]=numArray[i+1];
+		for(int i=0;i<count+1;i++) {
+			if(numberToRemove==numArray[i]) {
+				for(int j=i;j<count+1;j++) {
+					numArray[j]=numArray[j+1];
 				}
 				flag=1;
 				break;
@@ -110,5 +111,19 @@ public class MyCollection implements DynamicArray {
 		}
 		return null;
 	}
+	
+	public String toString( ) {
+		String array="{";
+		
+		for(int i=0;i<count;i++) {
+			array=array+numArray[i]+",";
+		}
+		if(array.charAt(array.length()-1)==',') {
+			array=array.substring(0, array.length()-1);
+		}
+		array=array+"}";
+		return array;
+	}
+	
 
 }
