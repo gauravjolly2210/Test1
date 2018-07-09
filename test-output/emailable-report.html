@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">com.qait.automation.Assignment.Test_MyCollection</td><td><a href="#m1"><b>Test10_Rotate_Array</b>  ("Left Rotation Collection Functionality")</a></td><td class="numi">1</td><td>1531123858256</td><td class="numi">12</td></tr><tr class="failedodd"><td><a href="#m2"><b>Test3_Get_Collection_Functionality</b>  ("Check toString function")</a></td><td class="numi">1</td><td>1531123858275</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m3"><b>Test4_DoubleCapacity</b>  ("Check Overflow Collection")</a></td><td class="numi">1</td><td>1531123858277</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m4"><b>Test5_Remove_Functionality_If_Entry_Already_Present</b>  ("Check remove functionality")</a></td><td class="numi">1</td><td>1531123858279</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m5"><b>Test8_Search_Functionality_If_Enrty_Exists</b>  ("Search Functionality")</a></td><td class="numi">1</td><td>1531123858285</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">com.qait.automation.Assignment.Test_MyCollection</td><td><a href="#m6"><b>Test1_Able_To_Add_New_Entry_In_Collection</b>  ("Check Add functionality")</a></td><td class="numi">1</td><td>1531123858270</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m7"><b>Test2_Duplicate_Entry_In_Collection</b>  ("Check Add functionality")</a></td><td class="numi">1</td><td>1531123858272</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m8"><b>Test6_Remove_Functionality_If_Collection_Is_Empty</b>  ("Check remove functionality")</a></td><td class="numi">1</td><td>1531123858281</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m9"><b>Test7_Collection_Length_Functionality</b>  ("Size of Collection")</a></td><td class="numi">1</td><td>1531123858283</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m10"><b>Test9_Search_Functionality_If_Enrty_Not_Exists</b>  ("Search Functionality")</a></td><td class="numi">1</td><td>1531123858287</td><td class="numi">1</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">com.qait.automation.Assignment.Test_MyCollection:Test3_Get_Collection_Functionality</h2>
+<div style="padding-left:3em">
+<p>Assertion Failed : Not able to read collection expected [{}] but found [com.qait.automation.Assignment.MyCollection@69ea3742]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at com.qait.automation.Assignment.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.qait.automation.Assignment.Test_MyCollection:Test5_Remove_Functionality_If_Entry_Already_Present</h2>
+<div style="padding-left:3em">
+<p>Assetion Failed : Not Able to delete entry from collection expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at com.qait.automation.Assignment.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.qait.automation.Assignment.Test_MyCollection:Test4_DoubleCapacity</h2>
+<div style="padding-left:3em">
+<p>Assertion Failed : Not able to add number in collection once it get fulled expected [{4,5,-4,-5,6}] but found [com.qait.automation.Assignment.MyCollection@73846619]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at com.qait.automation.Assignment.Test_MyCollection.Test4_DoubleCapacity(Test_MyCollection.java:41)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.qait.automation.Assignment.Test_MyCollection:Test8_Search_Functionality_If_Enrty_Exists</h2>
+<div style="padding-left:3em">
+<p>expected [1] but found [-1]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at com.qait.automation.Assignment.Test_MyCollection.Test8_Search_Functionality_If_Enrty_Exists(Test_MyCollection.java:75)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.qait.automation.Assignment.Test_MyCollection:Test10_Rotate_Array</h2>
+<div style="padding-left:3em">
+<p>expected [{Is, Always, A Fun., Sometimes, Automation, Testing}] but found [com.qait.automation.Assignment.MyCollection@5cb9f472]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.qait.automation.Assignment.Test_MyCollection.Test10_Rotate_Array(Test_MyCollection.java:94)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.qait.automation.Assignment.Test_MyCollection:Test9_Search_Functionality_If_Enrty_Not_Exists</h2>
+<div style="padding-left:3em">
+[INFO] : Assertion Passed : Function returns -1 if entry is not present<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.qait.automation.Assignment.Test_MyCollection:Test2_Duplicate_Entry_In_Collection</h2>
+<div style="padding-left:3em">
+[INFO] : Assertion Passed : Not able to add duplicate number<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.qait.automation.Assignment.Test_MyCollection:Test7_Collection_Length_Functionality</h2>
+<div style="padding-left:3em">
+[INFO] : Assertion Passed : Collection length is correct<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.qait.automation.Assignment.Test_MyCollection:Test6_Remove_Functionality_If_Collection_Is_Empty</h2>
+<div style="padding-left:3em">
+[INFO] : Assertion Passed : Can handle remove parameter if collection is empty<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.qait.automation.Assignment.Test_MyCollection:Test1_Able_To_Add_New_Entry_In_Collection</h2>
+<div style="padding-left:3em">
+[INFO] : Assertion Passed : Add New Entry functionality is working fine<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

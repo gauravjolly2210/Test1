@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qait.automation.Assignment.Test_MyCollection">
+        <methods>
+          <include name="Test5_Remove_Functionality_If_Entry_Already_Present"/>
+          <include name="Test8_Search_Functionality_If_Enrty_Exists"/>
+          <include name="Test10_Rotate_Array"/>
+          <include name="Test3_Get_Collection_Functionality"/>
+          <include name="Test4_DoubleCapacity"/>
+        </methods>
+      </class> <!-- com.qait.automation.Assignment.Test_MyCollection -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
